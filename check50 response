@@ -1,0 +1,2560 @@
+<!DOCTYPE html>
+<html><head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>This is check50.</title>
+    </head>
+    <body data-new-gr-c-s-loaded="9.22.0">
+        <div class="container">
+            <div class="row">
+
+            <h1>check50</h1>
+            <h2>cs50/problems/2021/x/plurality</h2>
+            <hr>
+              
+                  
+                      <h3 style="color:green">:) plurality.c exists</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          checking that plurality.c exists...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) plurality compiles</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          running clang plurality.c -o plurality -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                          running clang plurality_test.c -o plurality_test -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of first candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of middle candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of last candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns false when given name of invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts when all votes are zero</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts after some have already voted</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote leaves vote counts unchanged when voting for invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Alice as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Bob as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Charlie as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints multiple winners in case of tie</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;both&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints all names when all candidates are tied</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;all&nbsp;three&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+
+            </div>
+        </div>
+    
+</body></html>
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>This is check50.</title>
+    </head>
+<body data-new-gr-c-s-loaded="9.22.0">
+        <div class="container">
+            <div class="row">
+
+            <h1>check50</h1>
+            <h2>cs50/problems/2021/x/plurality</h2>
+            <hr>
+              
+                  
+                      <h3 style="color:green">:) plurality.c exists</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          checking that plurality.c exists...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) plurality compiles</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          running clang plurality.c -o plurality -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                          running clang plurality_test.c -o plurality_test -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of first candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of middle candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of last candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns false when given name of invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts when all votes are zero</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts after some have already voted</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote leaves vote counts unchanged when voting for invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Alice as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Bob as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Charlie as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints multiple winners in case of tie</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;both&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints all names when all candidates are tied</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;all&nbsp;three&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+
+            </div>
+        </div>
+    
+</body>
+<div class="container">
+            <div class="row">
+
+            <h1>check50</h1>
+            <h2>cs50/problems/2021/x/plurality</h2>
+            <hr>
+              
+                  
+                      <h3 style="color:green">:) plurality.c exists</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          checking that plurality.c exists...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) plurality compiles</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          running clang plurality.c -o plurality -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                          running clang plurality_test.c -o plurality_test -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of first candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of middle candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of last candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns false when given name of invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts when all votes are zero</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts after some have already voted</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote leaves vote counts unchanged when voting for invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Alice as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Bob as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Charlie as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints multiple winners in case of tie</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;both&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints all names when all candidates are tied</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;all&nbsp;three&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+
+            </div>
+        </div>
+<<pseudo>></<pseudo>>
+<div class="row">
+
+            <h1>check50</h1>
+            <h2>cs50/problems/2021/x/plurality</h2>
+            <hr>
+              
+                  
+                      <h3 style="color:green">:) plurality.c exists</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          checking that plurality.c exists...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) plurality compiles</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          running clang plurality.c -o plurality -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                          running clang plurality_test.c -o plurality_test -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of first candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of middle candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of last candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns false when given name of invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts when all votes are zero</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts after some have already voted</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote leaves vote counts unchanged when voting for invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Alice as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Bob as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Charlie as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints multiple winners in case of tie</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;both&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints all names when all candidates are tied</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;all&nbsp;three&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+
+            </div>
+<<pseudo>></<pseudo>>
+<h1>check50</h1>
+<h2>cs50/problems/2021/x/plurality</h2>
+<hr>
+<h3 style="color:green">:) plurality.c exists</h3>
+<div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          checking that plurality.c exists...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+<h3 style="color:green">:) plurality compiles</h3>
+<div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          running clang plurality.c -o plurality -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                          running clang plurality_test.c -o plurality_test -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+<h3 style="color:green">:) vote returns true when given name of first candidate</h3>
+<h3 style="color:green">:) vote returns true when given name of middle candidate</h3>
+<h3 style="color:green">:) vote returns true when given name of last candidate</h3>
+<h3 style="color:green">:) vote returns false when given name of invalid candidate</h3>
+<h3 style="color:green">:) vote produces correct counts when all votes are zero</h3>
+<h3 style="color:green">:) vote produces correct counts after some have already voted</h3>
+<h3 style="color:green">:) vote leaves vote counts unchanged when voting for invalid candidate</h3>
+<h3 style="color:red">:( print_winner identifies Alice as winner of election</h3>
+<div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+<h3 style="color:red">:( print_winner identifies Bob as winner of election</h3>
+<div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+<h3 style="color:red">:( print_winner identifies Charlie as winner of election</h3>
+<div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+<h3 style="color:red">:( print_winner prints multiple winners in case of tie</h3>
+<div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;both&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+<h3 style="color:red">:( print_winner prints all names when all candidates are tied</h3>
+<div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;all&nbsp;three&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+<<pseudo>></<pseudo>>
+<div class="row">
+
+            <h1>check50</h1>
+            <h2>cs50/problems/2021/x/plurality</h2>
+            <hr>
+              
+                  
+                      <h3 style="color:green">:) plurality.c exists</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          checking that plurality.c exists...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) plurality compiles</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          running clang plurality.c -o plurality -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                          running clang plurality_test.c -o plurality_test -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of first candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of middle candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of last candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns false when given name of invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts when all votes are zero</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts after some have already voted</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote leaves vote counts unchanged when voting for invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Alice as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Bob as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Charlie as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints multiple winners in case of tie</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;both&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints all names when all candidates are tied</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;all&nbsp;three&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+
+            </div>
+<<pseudo>></<pseudo>>
+<div class="container">
+            <div class="row">
+
+            <h1>check50</h1>
+            <h2>cs50/problems/2021/x/plurality</h2>
+            <hr>
+              
+                  
+                      <h3 style="color:green">:) plurality.c exists</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          checking that plurality.c exists...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) plurality compiles</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          running clang plurality.c -o plurality -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                          running clang plurality_test.c -o plurality_test -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of first candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of middle candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of last candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns false when given name of invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts when all votes are zero</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts after some have already voted</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote leaves vote counts unchanged when voting for invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Alice as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Bob as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Charlie as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints multiple winners in case of tie</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;both&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints all names when all candidates are tied</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;all&nbsp;three&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+
+            </div>
+        </div>
+<body data-new-gr-c-s-loaded="9.22.0">
+        <div class="container">
+            <div class="row">
+
+            <h1>check50</h1>
+            <h2>cs50/problems/2021/x/plurality</h2>
+            <hr>
+              
+                  
+                      <h3 style="color:green">:) plurality.c exists</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          checking that plurality.c exists...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) plurality compiles</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          running clang plurality.c -o plurality -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                          running clang plurality_test.c -o plurality_test -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of first candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of middle candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of last candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns false when given name of invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts when all votes are zero</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts after some have already voted</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote leaves vote counts unchanged when voting for invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Alice as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Bob as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Charlie as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints multiple winners in case of tie</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;both&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints all names when all candidates are tied</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;all&nbsp;three&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+
+            </div>
+        </div>
+    
+</body>
+<html><head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>This is check50.</title>
+    </head>
+    <body data-new-gr-c-s-loaded="9.22.0">
+        <div class="container">
+            <div class="row">
+
+            <h1>check50</h1>
+            <h2>cs50/problems/2021/x/plurality</h2>
+            <hr>
+              
+                  
+                      <h3 style="color:green">:) plurality.c exists</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          checking that plurality.c exists...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) plurality compiles</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+
+                          
+                          
+                              <samp>
+                                  <b>Log</b><br>
+                                  <div style="border:2px solid; padding:2px; max-height:20em; overflow:scroll;">
+                                      
+                                          running clang plurality.c -o plurality -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                          running clang plurality_test.c -o plurality_test -std=c11 -ggdb -lm -lcs50...
+                                          <br>
+                                      
+                                  </div>
+                              </samp>
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of first candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of middle candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns true when given name of last candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote returns false when given name of invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts when all votes are zero</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote produces correct counts after some have already voted</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:green">:) vote leaves vote counts unchanged when voting for invalid candidate</h3>
+                  
+
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Alice as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Bob as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner identifies Charlie as winner of election</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;winner&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints multiple winners in case of tie</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;both&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+                  
+                      <h3 style="color:red">:( print_winner prints all names when all candidates are tied</h3>
+                  
+
+                  
+                      <div class="well well-sm">
+                          
+                          
+                          <p>
+                              <b>Cause</b><br>
+                              
+                                  print_winner&nbsp;function&nbsp;did&nbsp;not&nbsp;print&nbsp;all&nbsp;three&nbsp;winners&nbsp;of&nbsp;election
+                              
+                              <br>
+                              
+                                  
+                              
+                          </p>
+                          
+
+                          
+                          
+
+                          
+
+                          
+                          
+
+                          
+                          
+
+                      </div>
+                  
+              
+
+            </div>
+        </div>
+    
+</body></html>
